@@ -1,0 +1,10 @@
+node_modules/
+.dsh-acl-recovery/
+项目交接说明.md
+*.log
+*.tgz
+.env
+.env.*
+dist/
+.DS_Store
+Thumbs.db

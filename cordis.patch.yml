@@ -1,0 +1,3 @@
+- insert:
+    - id: micropython-init-generator
+      name: 'dsh-micropython-init-generator'

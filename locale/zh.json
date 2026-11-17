@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "MicroPython 输入/输出代码生成器",
+    "description": "按分类生成 MicroPython 输入/输出代码：数字、模拟、通信、PWM、继电器、舵机和电机。"
+  }
+}

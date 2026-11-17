@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="MicroPython code generator">
+  <defs>
+    <linearGradient id="mpyg-bg" x1="8" y1="6" x2="56" y2="58" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2dd4bf"/>
+      <stop offset="0.55" stop-color="#0ea5e9"/>
+      <stop offset="1" stop-color="#2563eb"/>
+    </linearGradient>
+    <linearGradient id="mpyg-chip" x1="20" y1="18" x2="46" y2="46" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0f172a"/>
+      <stop offset="1" stop-color="#1e293b"/>
+    </linearGradient>
+  </defs>
+  <rect x="3" y="3" width="58" height="58" rx="15" fill="url(#mpyg-bg)"/>
+  <g stroke="#dffcff" stroke-width="2.2" stroke-linecap="round" opacity="0.9">
+    <path d="M20 12v6M28 12v6M36 12v6M44 12v6M20 46v6M28 46v6M36 46v6M44 46v6"/>
+    <path d="M12 20h6M12 28h6M12 36h6M12 44h6M46 20h6M46 28h6M46 36h6M46 44h6"/>
+  </g>
+  <rect x="18" y="18" width="28" height="28" rx="7" fill="url(#mpyg-chip)" stroke="#e0f2fe" stroke-width="1.4"/>
+  <path d="M27 26l-5 6 5 6M37 26l5 6-5 6" fill="none" stroke="#7dd3fc" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M33 24.5l-2.5 15" fill="none" stroke="#5eead4" stroke-width="2.6" stroke-linecap="round"/>
+  <circle cx="23.5" cy="23.5" r="1.4" fill="#5eead4"/>
+  <circle cx="40.5" cy="40.5" r="1.4" fill="#7dd3fc"/>
+</svg>

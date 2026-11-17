@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "MicroPython input/output code generator",
+    "description": "Generates MicroPython input and output code by category: digital, analog, communication, PWM, relay, servo, and motor."
+  }
+}

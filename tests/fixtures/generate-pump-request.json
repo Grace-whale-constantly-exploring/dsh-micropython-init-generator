@@ -1,0 +1,22 @@
+{
+  "logic": "如果漏水传感器检测到漏水，并且光敏电阻数值小于1000，那么让水泵运行5秒后停止",
+  "input": {
+    "label": "漏水传感器",
+    "model": "漏水传感器",
+    "category": "digital",
+    "kind": "digital",
+    "pins": [18],
+    "activeLevel": 0,
+    "pull": "up"
+  },
+  "output": {
+    "label": "220V 水泵",
+    "model": "220V 水泵",
+    "type": "relay",
+    "kind": "relay",
+    "pins": [26],
+    "dirPin": null,
+    "activeLevel": 0
+  },
+  "invert": false
+}

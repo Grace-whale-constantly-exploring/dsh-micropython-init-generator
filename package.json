@@ -1,0 +1,65 @@
+{
+  "name": "dsh-micropython-init-generator",
+  "version": "0.1.0",
+  "description": "Generate ESP32 MicroPython input/output boilerplate from a natural-language description, with non-blocking timing and explicit pin-confirmation TODOs.",
+  "type": "module",
+  "author": "Grace",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Grace-whale-constantly-exploring/dsh-micropython-init-generator.git"
+  },
+  "homepage": "https://github.com/Grace-whale-constantly-exploring/dsh-micropython-init-generator#readme",
+  "bugs": {
+    "url": "https://github.com/Grace-whale-constantly-exploring/dsh-micropython-init-generator/issues"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0",
+    "dsh": ">=0.2.2-rc.3 <0.3.0"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/zh.json",
+    "locale/en.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "check": "node --check index.js && node --check client.js",
+    "test": "node tests/test-generator.mjs && node tests/test-render.mjs && node tests/test-host.mjs && node tests/test-apply.mjs && node tests/validate-bundle.mjs",
+    "prepublishOnly": "npm run check && npm test"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "micropython",
+    "esp32",
+    "code-generator"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-layout"
+      ]
+    }
+  }
+}
